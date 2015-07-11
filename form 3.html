@@ -10,6 +10,14 @@
 CONDITION/ADEQUACY OF BUILDING AND GROUNDS
 </b></legend></center>
 <pre>
+
+
+
+<b>Maintainence Description</b>:
+<input type="textarea" rows="100" cols="100" name="b" id="b1">
+<br><br>
+
+
 <b>Area</b>:
 <input type="radio" name="n1" value="a">OK
 <input type="radio" name="n1" value="nf">Need Fixing  Add description(if any):<input type="textbox" name="t1" value="">
@@ -94,7 +102,23 @@ Walls painting</b>:
 <input type="radio" name="n1" value="nf">Need Fixing  Add description(if any):<input type="textbox" name="t1" value="">
 <br><br>
 
-<
+ <b>Priority
+ (1-highest priority 
+ 10-lowest priority):</b>
+ <input type="range" name="points" min="0" max="10">
+ <input type="submit">
+ <br>
+
+ Request date(dd/mm/yy):<input type="datetime" name="datetime" id="dt">
+  <input type="submit">
+  <br>
+  
+  Status:<input type="text" name="status" id="status">
+ <br>
+   Estimated cost:<input type="text" id="m_et_cost">
+  <br>
+
+
 </pre>
 </fieldset>
 </form>
