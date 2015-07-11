@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AIR INDIA</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="refreshform.css" />
+
+
+
+		
+	</head>
+<body background="images18.jpg">
+
+
+
+<img src="download.jpg" width="120" height="100" /></a></p>
+
+		
+<h1>AIR INDIA</h1><br>
+<h2>We're flying better than ever & There's no better way to fly</h2>
+
+
+<div id=main>    
+<hr>
+
+<table colspan="5">
+<center>
+<h4>registration form</h4>
+<script type="text/javascript">
+
+function validate()
+{
+
+if( document.myForm.Name.value == "" )
+     {
+     alert( "Please provide your name like !" );
+     document.myForm.Name.focus() ;
+     return false;
+     }
+
+
+
+
+
+if( document.myForm.Userid.value == "" )
+    {
+     alert( "Please provide your userid!" );
+     document.myForm.Userid.focus() ;
+     return false;
+    }
+
+
+if( document.myForm.Password.value == "" ||
+           isNaN( document.myForm.Password.value ) ||
+           document.myForm.Password.value.length != 8)
+   {
+     alert( "Please Type Your  PASSWORD In Given Box format must be 8 digit" );
+     document.myForm.Password.focus() ;
+     return false;
+}
+
+
+
+
+if( document.myForm.Confirm_Password.value == "" ||
+           isNaN( document.myForm.Confirm_Password.value ) ||
+           document.myForm.Confirm_Password.value.length != 8)
+   {
+     alert( "Please Type Your  Confirm_PASSWORD In Given Box format must be 8 digit" );
+     document.myForm.Confirm_Password.focus() ;
+     return false;
+}
+
+
+
+
+if ((document.myForm.Password.value) != (document.myForm.Confirm_Password.value))
+    {
+    alert("Your password not match retype plz check it match!");
+    document.myForm.Confirm_Password.value == "";
+    document.myForm.Confirm_Password.focus();
+    return false;
+    }
+
+
+if (document.myForm.Email.value == "")
+			{
+                alert("Please give your email address");
+                return false;
+            }
+			if (document.myForm.Email.value.indexOf("@", 0) < 0)
+            {
+                 alert("Please enter a valid e-mail address.");
+                 return false;
+            }	
+
+
+if( document.myForm.submit.value == "" )
+   {
+     alert( "if you want to submit then click on ok!" );
+     document.myForm.submit.focus() ;
+     return false;
+   }
+   return( true );
+}
+
+
+</script>
+
+
+
+
+</head>
+<body bgcolor="white">
+
+ <form action="registration_final.php" name="myForm" method="post" onsubmit="return(validate());">
+
+<center>
+
+ <table cellspacing="2" cellpadding="2" border="0" align="center">
+
+<tr>
+   <td align="left">Name *</td>
+   <td><input type="text" name="Name" placeholder="ex: aditya"/></td>
+ </tr>
+
+ <tr>
+   <td align="left">Username *</td>
+   <td><input type="text" name="Userid"  placeholder="ex: aditya875"/></td>
+ </tr>
+
+
+<tr>
+   <td align="left">Password *</td>
+   <td><input type="password" name="Password"  /></td>
+ </tr>
+
+<tr>
+   <td align="left">Confirm_password *</td>
+   <td><input type="password" name="Confirm_Password"  /></td>
+ </tr>
+
+
+<tr>
+<td align="left">Gender *</td>
+<td><input type="radio" name="Gender" value="Male" checked="checked"/>Male
+    <input type="radio" name="Gender" value="Female"/>Female
+</td>
+</tr>
+
+
+
+
+
+ <tr>
+   <td align="left">email *</td>
+   <td><input type="text" name="Email"  placeholder="ex: adityakmr875@gmail.com"/>
+
+</td>
+ </tr>
+            
+                            
+
+<td align="left"></td>
+<td><input type="button" value="back"/>
+     <input type="submit"  value="submit"/>
+     <input type="reset" value="reset"/></td>
+</tr>
+
+
+ 
+
+ 
+
+
+
+</tr>
+</table>
+</form>
+
+
+</hr>
+</table>
+</div>
+</body>	
+</html>
