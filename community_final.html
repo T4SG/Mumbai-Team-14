@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Community Details</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		
+
+
+		
+	</head>
+		
+<h1><center>Community Details</center></h1><br>
+
+
+<div id=main>    
+<hr><br>
+
+<table colspan="5">
+<center>
+
+<script type="text/javascript">
+
+function validate()
+{
+
+if( document.myForm.com_loc.value == "" )
+     {
+     alert( "Please provide a location !" );
+     document.myForm.com_loc.focus() ;
+     return false;
+     }
+
+
+
+
+
+if( document.myForm.com_country.value == "" )
+    {
+     alert( "Please provide the country!" );
+     document.myForm.com_country.focus() ;
+     return false;
+    }
+
+
+
+if( document.myForm.submit.value == "" )
+   {
+     alert( "if you want to submit then click on ok!" );
+     document.myForm.submit.focus() ;
+     return false;
+   }
+   return( true );
+}
+
+
+</script>
+
+
+
+
+</head>
+<body bgcolor="white">
+
+ <form  action="community_final_insert.php" name="myForm" method="post" onsubmit="return(validate());">
+
+<center>
+
+ <table cellspacing="2" cellpadding="2" border="0" align="center">
+
+<tr>
+   <td align="left">Community Name:</td>
+   <td><input type="text" name="com_name" placeholder="Eg:Happy Hearts" size="30"></td>
+ </tr>
+
+ <tr>
+   <td align="left">Community Location:</td>
+   <td><input type="text" name="com_loc" placeholder="Eg:Delhi" size="30"></td>
+ </tr>
+
+
+<tr>
+   <td align="left">Community Country: </td>
+   <td><input type="text" name="com_country" placeholder="Eg:India" size="30"></td>
+ </tr>
+
+<tr>
+   <td align="left">Disaster Description:</td>
+   <td><input type="text" name="des" placeholder="Eg:Earthquake" size="30"></td>
+ </tr>
+<tr>
+   <td align="left">Disaster Description:</td>
+   <td><input type="radio" size="30">VESIT<br>
+   <input type="radio" size="30">VJTI<br>
+   <input type="radio" size="30">VIT</td>
+ </tr>
+
+
+
+<td align="left"></td>
+<td>
+     <input type="submit"  value="submit"/>
+    </tr>
+
+
+ 
+
+ 
+
+
+
+</tr>
+</table>
+</form>
+
+
+</hr>
+</table>
+</div>
+</body>	
+</html>
