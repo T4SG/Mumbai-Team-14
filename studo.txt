@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>School Info</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="refreshform.css" />
+
+
+
+		
+	</head>
+<body >
+
+
+
+
+
+		
+
+
+
+<div id=main>    
+<hr>
+
+<table colspan="5">
+<center>
+
+<script type="text/javascript">
+
+function validate()
+{
+
+if( document.myForm.is_hhf.value == "" )
+     {
+     alert( "Is the school funded by HHF!" );
+     document.myForm.is_hhf.focus() ;
+     return false;
+     }
+
+
+
+
+
+if( document.myForm.dir_name.value == "" )
+    {
+     alert( "Please provide your directors name" );
+     document.myForm.dir_name.focus() ;
+     return false;
+    }
+
+	if( document.myForm.dir_cont.value == "" )
+    {
+     alert( "Please provide your directors contact number" );
+     document.myForm.dir_cont.focus() ;
+     return false;
+    }
+
+	
+	
+	if( document.myForm.no_teacher.value == "" )
+    {
+     alert( "Please provide the number of teachers" );
+     document.myForm.no_teacher.focus() ;
+     return false;
+    }
+
+
+	if( document.myForm.s_type.value == "" )
+    {
+     alert( "Please provide the type of the school" );
+     document.myForm.s_type.focus() ;
+     return false;
+    }
+
+
+
+		if( document.myForm.s_est_year.value == "" )
+    {
+     alert( "Please provide the established date of the school" );
+     document.myForm.s_est_year.focus() ;
+     return false;
+    }
+
+
+if( document.myForm.submit.value == "" )
+   {
+     alert( "if you want to submit then click on ok!" );
+     document.myForm.submit.focus() ;
+     return false;
+   }
+   return( true );
+}
+
+
+</script>
+
+
+
+
+</head>
+<body bgcolor="white">
+
+ <form action="com.php" name="myForm" method="post" onsubmit="return(validate());">
+
+<center>
+
+ <table cellspacing="2" cellpadding="2" border="0" align="center">
+
+<tr>
+   <td align="left">IS HFF:</td>
+   <td><input type="text" name="is_hhf" /></td>
+ </tr>
+
+ <tr>
+   <td align="left">Director name:</td>
+   <td><input type="text" name="dir_name"/></td>
+ </tr>
+
+
+<tr>
+   <td align="left">Director Contact number:</td>
+   <td><input type="number" name="dir_cont"  /></td>
+ </tr>
+
+<tr>
+   <td align="left">No of teachers :</td>
+   <td><input type="number" name="no_teacher"  /></td>
+ </tr>
+
+
+<tr>
+<td align="left">School Type :</td>
+<td><input type="radio" name="s_type" value="Govt" checked="checked"/>Govt
+    <input type="radio" name="s_type" value="Private"/>Private
+</td>
+</tr>
+
+
+
+
+
+ <tr>
+   <td align="left">School Established Year:</td>
+   <td><input type="number" name="s_est_year" />
+
+</td>
+ </tr>
+            
+                            
+
+<td align="left"></td>
+<td>
+     <input type="submit"  value="submit"/>
+     
+</tr>
+
+
+ 
+
+ 
+
+
+
+</tr>
+</table>
+</form>
+
+
+</hr>
+</table>
+</div>
+</body>	
+</html>
